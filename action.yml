@@ -1,0 +1,14 @@
+name: 'Add .NET Format Problem Matcher'
+description: 'Add github action program matcher for `dotnet format` to add errors/warnings as annotations'
+runs:
+  using: "composite"
+  steps:
+    - name: Debug LS
+      shell: bash
+      run: ls
+    - name: Debug PWD
+      shell: bash
+      run: ls
+    - name: Register Problem Matcher
+      shell: bash
+      run: echo "::add-matcher::problem-matcher-dotnet-format.json"  
