@@ -11,4 +11,4 @@ runs:
       run: ls
     - name: Register Problem Matcher
       shell: bash
-      run: echo "::add-matcher::problem-matcher-dotnet-format.json"  
+      run: echo "::add-matcher::${{ github.action_path }}/problem-matcher-dotnet-format.json"  
