@@ -4,13 +4,14 @@
 			"owner": "dotnet",
 			"pattern": [
 				{
-					"regexp": "^(.*)\\((\\d+),(\\d+)\\):\\s(error|warn)\\s([^a-z]*):\\s(.*)\\s\\[.*\\]$",
+					"regexp": "^(.*)\\((\\d+),(\\d+)\\):\\s(error|warn)\\s([^a-z]*):\\s(.*)\\s\\[(.*)\\]$",
 					"file": 1,
 					"line": 2,
 					"column": 3,
 					"severity": 4,
 					"code": 5,
-					"message": 6
+					"message": 6,
+					"fromPath": 7
 				}
 			]
 		}
