@@ -3,12 +3,6 @@ description: 'Add github action program matcher for `dotnet format` to add error
 runs:
   using: "composite"
   steps:
-    - name: Debug LS
-      shell: bash
-      run: ls
-    - name: Debug PWD
-      shell: bash
-      run: ls
     - name: Register Problem Matcher
       shell: bash
       run: echo "::add-matcher::${{ github.action_path }}/problem-matcher-dotnet-format.json"  
